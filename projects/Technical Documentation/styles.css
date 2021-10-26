@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #EEEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+h1 {
+    margin: 20px auto;
+    font-size: 30px;
+    text-align: center;
+}
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+p {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #464646;
+}
+li {
+    padding-bottom: 15px;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+.sidebar, .navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 300px;
+    max-height: 100%;
+}
+.navbar {
+    position: relative;
+    overflow-y: auto;
+}
+.navbar a {
+    border-top: 1px solid black;
+    text-decoration: none;
+    padding: 15px 0 15px 20px;
+    color: #464646;
+}
+.main-doc {
+    padding: 25px 20px 25px 35px;
+    flex-grow: 1;
+    margin-left: 300px;
+    line-height: 1.5;
+}
+.main-list {
+    color: #464646;
+    list-style-type: disc;
+    padding-left: 70px;
+    font-size: 15px;
+}
+.nested-list {
+    color: #464646;
+    list-style-type: circle;
+    padding-left: 70px;
+    font-size: 15px;
+}
+.container-code {
+    background: #E4E4E4;
+    border-radius: 5px;
+    margin: auto 30px 15px 30px;
+    padding: 15px;
+}
+.navbar a:hover {
+    background: #E4E4E4;
+}
+@media (max-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar, .navbar {
+        position: unset;
+        box-sizing: border-box;
+        border: 1px solid black;
+        height: 300px;
+        width: 100%;
+    }
+    .main-doc {
+        margin: unset;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
